@@ -4,9 +4,9 @@ This is an enterprise website template built using **React 18 (with TypeScript)*
 
 ![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/1.png?raw=true)
 
-![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/2.png?raw=true)
-
 ![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/3.png?raw=true)
+
+![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/2.png?raw=true)
 
 
 ## Table of Contents 
