@@ -2,11 +2,11 @@
 
 This is an enterprise website template built using **React 18 (with TypeScript)**, **Material UI 5**, and **Django 4.1**.
 
-![plot](https://github.com/mgrybel/BOB-VIDEO-15-Enterprise-Website-React-TypeScript-Django/blob/master/frontend/src/assets/images/1.png?raw=true)
+![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/1.png?raw=true)
 
-![plot](https://github.com/mgrybel/BOB-VIDEO-15-Enterprise-Website-React-TypeScript-Django/blob/master/frontend/src/assets/images/2.png?raw=true)
+![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/2.png?raw=true)
 
-![plot](https://github.com/mgrybel/BOB-VIDEO-15-Enterprise-Website-React-TypeScript-Django/blob/master/frontend/src/assets/images/3.png?raw=true)
+![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/3.png?raw=true)
 
 
 ## Table of Contents 
