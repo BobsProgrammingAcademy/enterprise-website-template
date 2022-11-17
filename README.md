@@ -1,6 +1,6 @@
 # Enterprise Website Template
 
-This is an enterprise website template built using **React 18 (with TypeScript 4)**, **Material UI 5**, and **Django 4** and **Django REST Framework 3**.
+This is an enterprise website template built using **React 18 (with TypeScript 4)**, **Material UI 5**, **Django 4** and **Django REST Framework 3**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/1.png?raw=true)
 
