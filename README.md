@@ -1,6 +1,6 @@
 # Enterprise Website Template
 
-This is an enterprise website template built using **React 18.2.0 (with TypeScript 4.7.4)**, **Material UI 5.8.7**, and **Django 4.1**.
+This is an enterprise website template built using **React 18 (with TypeScript 4)**, **Material UI 5**, and **Django 4**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/enterprise-website-template/blob/main/frontend/src/assets/images/1.png?raw=true)
 
@@ -11,6 +11,7 @@ This is an enterprise website template built using **React 18.2.0 (with TypeScri
 - [Running the application](#run-the-application)
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
+- [Copyright and License](#copyright-and-license)
 
 
 ## Prerequisites
@@ -163,3 +164,7 @@ To modify the fonts in the application, first, add a new font to the ```frontend
 ### Changing Logo
 
 To modify the logo in the application, make changes in the ```frontend/src/layout/Header.tsx``` and ```frontend/src/layout/Sidebar.tsx``` files.
+
+## Copyright and License
+
+Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
