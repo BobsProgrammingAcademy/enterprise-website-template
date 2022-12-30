@@ -100,7 +100,7 @@ npm install
 
 To run the application, you need to have both the backend and the frontend up and running.
 
-#### 1. Run backend
+### 1. Run backend
 
 From the **backend** directory run:
 
@@ -108,7 +108,7 @@ From the **backend** directory run:
 python manage.py runserver
 ```
 
-#### 2. Run frontend
+### 2. Run frontend
 
 From the **frontend** directory run:
 
@@ -116,7 +116,7 @@ From the **frontend** directory run:
 npm start
 ```
 
-#### 3. View the application
+### 3. View the application
 
 Go to http://localhost:3000/ to view the application.
 
