@@ -15,7 +15,7 @@ interface PricingProps {
   title: string;
   price: number;
   currency: string;
-  features: {name: string}[];
+  features: { name: string }[];
 }
 
 const Pricing = (): JSX.Element => {
@@ -24,17 +24,18 @@ const Pricing = (): JSX.Element => {
   const [pricing, setPricing] = useState<PricingProps[]>([]);
 
   const fetchPricing = () => {
-    axios.get<PricingProps[]>('http://127.0.0.1:8000/pricing', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      setPricing(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<PricingProps[]>('http://127.0.0.1:8000/pricing', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setPricing(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchPricing();
   }, []);
@@ -111,18 +112,14 @@ const Pricing = (): JSX.Element => {
                             {item.currency}
                           </Box>
                         </Typography>
-                        <Typography 
-                          variant='h2' 
-                          color='primary' 
-                          gutterBottom
-                        >
+                        <Typography variant='h2' color='primary' gutterBottom>
                           <Box component='span' fontWeight={600}>
                             {item.price}
                           </Box>
                         </Typography>
                       </Box>
-                      <Typography 
-                        variant='subtitle2' 
+                      <Typography
+                        variant='subtitle2'
                         color={theme.palette.text.secondary}
                       >
                         Per user, per month
@@ -157,8 +154,8 @@ const Pricing = (): JSX.Element => {
                         '&:hover': {
                           backgroundColor: 'transparent',
                           color: theme.palette.primary.main,
-                          border: '2px solid ' + theme.palette.primary.main
-                        }
+                          border: '2px solid ' + theme.palette.primary.main,
+                        },
                       }}
                     >
                       Get started

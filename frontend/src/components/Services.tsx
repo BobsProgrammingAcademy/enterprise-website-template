@@ -21,17 +21,18 @@ const Services = (): JSX.Element => {
   const [services, setServices] = useState<ServicesProps[]>([]);
 
   const fetchServices = () => {
-    axios.get<ServicesProps[]>('http://127.0.0.1:8000/services', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      setServices(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<ServicesProps[]>('http://127.0.0.1:8000/services', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setServices(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchServices();
   }, []);
