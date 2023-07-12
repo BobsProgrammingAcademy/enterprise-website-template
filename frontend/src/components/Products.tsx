@@ -18,19 +18,20 @@ const Products = (): JSX.Element => {
   const theme = useTheme();
 
   const [products, setProducts] = useState<ProductsProps[]>([]);
-  
+
   const fetchProducts = () => {
-    axios.get<ProductsProps[]>('http://127.0.0.1:8000/products', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      setProducts(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<ProductsProps[]>('http://127.0.0.1:8000/products', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -73,34 +74,30 @@ const Products = (): JSX.Element => {
           <Grid container spacing={4}>
             {products.map((item, i) => (
               <Grid item xs={12} sm={6} key={i}>
-                <Box 
-                  component={Card} 
-                  padding={4} 
-                  width={1} 
+                <Box
+                  component={Card}
+                  padding={4}
+                  width={1}
                   height={1}
                   bgcolor={theme.palette.background.paper}
                   sx={{
                     '&:hover': {
                       bgcolor: theme.palette.background.default,
                       color: theme.palette.common.white,
-                    }
+                    },
                   }}
                 >
                   <Box display='flex' flexDirection='column'>
                     <Typography
                       variant='h6'
                       gutterBottom
-                      sx={{ 
+                      sx={{
                         fontWeight: 600,
                       }}
                     >
                       {item.name}
                     </Typography>
-                    <Typography 
-                      color='inherit'
-                    >
-                      {item.description}
-                    </Typography>
+                    <Typography color='inherit'>{item.description}</Typography>
                   </Box>
                   <Box display='block' width={1} height={1}>
                     <Card
@@ -123,7 +120,7 @@ const Products = (): JSX.Element => {
                           overflow: 'hidden',
                           borderRadius: 2,
                           filter: 'brightness(0.7)',
-                          mt: 4
+                          mt: 4,
                         }}
                       ></CardMedia>
                     </Card>

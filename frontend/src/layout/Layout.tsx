@@ -18,28 +18,27 @@ interface Props {
 
 const Layout = ({ children }: Props): JSX.Element => {
   const theme = useTheme();
-  const isLg = useMediaQuery(
-    theme.breakpoints.up('lg'),
-    { defaultMatches: true }
-  );
-  
+  const isLg = useMediaQuery(theme.breakpoints.up('lg'), {
+    defaultMatches: true,
+  });
+
   const [openSidebar, setOpenSidebar] = useState(false);
-  
+
   const handleSidebarOpen = (): void => {
     setOpenSidebar(true);
   };
-  
+
   const handleSidebarClose = (): void => {
     setOpenSidebar(false);
   };
-  
+
   const open = isLg ? false : openSidebar;
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
   });
-    
+
   const scrollTo = (id: string): void => {
     setTimeout(() => {
       const element = document.querySelector(`#${id}`) as HTMLElement;
@@ -49,24 +48,18 @@ const Layout = ({ children }: Props): JSX.Element => {
       window.scrollTo({ left: 0, top: element.offsetTop, behavior: 'smooth' });
     });
   };
-  
+
   return (
-    <Box 
+    <Box
       id='page-top'
       sx={{
         backgroundColor: theme.palette.background.default,
-        height: '100%'
+        height: '100%',
       }}
     >
       <Header onSidebarOpen={handleSidebarOpen} />
-      <Sidebar
-        onClose={handleSidebarClose}
-        open={open}
-      />
-      <Box
-        width={1}
-        margin='0 auto'
-      >
+      <Sidebar onClose={handleSidebarClose} open={open} />
+      <Box width={1} margin='0 auto'>
         {children}
       </Box>
       <Footer />
@@ -77,9 +70,9 @@ const Layout = ({ children }: Props): JSX.Element => {
             role='presentation'
             sx={{ position: 'fixed', bottom: 24, right: 32 }}
           >
-            <Fab 
-              color='primary' 
-              size='small' 
+            <Fab
+              color='primary'
+              size='small'
               aria-label='scroll back to top'
               sx={{
                 color: theme.palette.common.black,

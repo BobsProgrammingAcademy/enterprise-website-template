@@ -8,11 +8,10 @@ import PlayIcon from '@mui/icons-material/PlayCircleOutline';
 
 const HeroButtons = (): JSX.Element => {
   const theme = useTheme();
-  const isMd = useMediaQuery(
-    theme.breakpoints.up('md'),
-    { defaultMatches: true }
-  );
-  
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
+
   return (
     <>
       <Box
@@ -39,8 +38,8 @@ const HeroButtons = (): JSX.Element => {
             '&:hover': {
               backgroundColor: 'transparent',
               color: theme.palette.primary.main,
-              border: '2px solid ' + theme.palette.primary.main
-            }
+              border: '2px solid ' + theme.palette.primary.main,
+            },
           }}
         >
           Learn More
@@ -68,8 +67,8 @@ const HeroButtons = (): JSX.Element => {
               '&:hover': {
                 backgroundColor: theme.palette.primary.main,
                 color: theme.palette.common.black,
-                border: '2px solid ' + theme.palette.primary.main
-              }
+                border: '2px solid ' + theme.palette.primary.main,
+              },
             }}
           >
             Watch Demo

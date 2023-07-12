@@ -7,10 +7,10 @@ import getTheme from './theme/theme';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
 
-const App = (): JSX.Element => {  
+const App = (): JSX.Element => {
   return (
     <HelmetProvider>
-      <Helmet 
+      <Helmet
         titleTemplate="%s | Bob's Programming Academy"
         defaultTitle="Bob's Programming Academy"
       />

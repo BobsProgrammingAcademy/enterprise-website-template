@@ -18,7 +18,7 @@ interface Props {
 
 const Header = ({ onSidebarOpen }: Props): JSX.Element => {
   const theme = useTheme();
-  
+
   return (
     <>
       <AppBar
@@ -29,29 +29,30 @@ const Header = ({ onSidebarOpen }: Props): JSX.Element => {
           padding: '10px 0',
           marginBottom: '5px',
           top: 'auto',
-          boxShadow: '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)'
+          boxShadow:
+            '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)',
         }}
       >
         <Toolbar sx={{ minHeight: 70 }}>
           <Link href='/' sx={{ textDecoration: 'none' }}>
             <IconButton size='large' disabled>
-              <StormIcon 
-                sx={{ 
-                  color: theme.palette.primary.main, 
-                  height: 40, 
-                  width: 40 
-                }} 
+              <StormIcon
+                sx={{
+                  color: theme.palette.primary.main,
+                  height: 40,
+                  width: 40,
+                }}
               />
               <Box sx={{ display: { md: 'inline', xs: 'none' } }}>
-                <Typography 
-                  variant='h6' 
-                  sx={{ 
+                <Typography
+                  variant='h6'
+                  sx={{
                     flexGrow: 1,
                     color: theme.palette.text.primary,
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
                     textDecoration: 'none',
-                    marginLeft: '10px'
+                    marginLeft: '10px',
                   }}
                 >
                   Bob's Company
@@ -61,36 +62,21 @@ const Header = ({ onSidebarOpen }: Props): JSX.Element => {
           </Link>
           <Box sx={{ flexGrow: 1 }} />
           <Box
-            sx={{ 
+            sx={{
               alignItems: 'center',
-              display: { lg: 'flex', md: 'none', xs: 'none' } 
+              display: { lg: 'flex', md: 'none', xs: 'none' },
             }}
           >
-            <CustomButton 
-              href='#products'
-              text='Products'
-            />
-            <CustomButton 
-              href='#services'
-              text='Services'
-            />
-            <CustomButton 
-              href='#pricing'
-              text='Pricing'
-            />
-            <CustomButton 
-              href='#about'
-              text='About'
-            />
-            <CustomButton 
-              href='#contact'
-              text='Contact'
-            />
+            <CustomButton href='#products' text='Products' />
+            <CustomButton href='#services' text='Services' />
+            <CustomButton href='#pricing' text='Pricing' />
+            <CustomButton href='#about' text='About' />
+            <CustomButton href='#contact' text='Contact' />
           </Box>
-          <Box 
-            sx={{ 
-              display: { md: 'block', lg: 'none' } 
-            }} 
+          <Box
+            sx={{
+              display: { md: 'block', lg: 'none' },
+            }}
             alignItems='center'
           >
             <Button
@@ -101,7 +87,7 @@ const Header = ({ onSidebarOpen }: Props): JSX.Element => {
                 borderRadius: 0,
                 minWidth: 'auto',
                 padding: 1,
-                borderColor: alpha(theme.palette.divider, 0.2)
+                borderColor: alpha(theme.palette.divider, 0.2),
               }}
             >
               <MenuIcon />
