@@ -79,7 +79,7 @@ const Layout = ({ children }: Props): JSX.Element => {
                 '&:hover': {
                   backgroundColor: 'transparent',
                   color: theme.palette.primary.main,
-                  border: '2px solid' + theme.palette.primary.main,
+                  border: `2px solid ${theme.palette.primary.main}`,
                 },
               }}
             >

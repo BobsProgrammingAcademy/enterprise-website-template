@@ -150,11 +150,11 @@ const Pricing = (): JSX.Element => {
                       sx={{
                         textTransform: 'uppercase',
                         color: theme.palette.common.black,
-                        border: '2px solid ' + theme.palette.primary.main,
+                        border: `2px solid ${theme.palette.primary.main}`,
                         '&:hover': {
                           backgroundColor: 'transparent',
                           color: theme.palette.primary.main,
-                          border: '2px solid ' + theme.palette.primary.main,
+                          border: `2px solid ${theme.palette.primary.main}`,
                         },
                       }}
                     >

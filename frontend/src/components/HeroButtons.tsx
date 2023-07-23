@@ -34,11 +34,11 @@ const HeroButtons = (): JSX.Element => {
             marginRight: '15px',
             fontSize: '16px',
             textTransform: 'uppercase',
-            border: '2px solid ' + theme.palette.primary.main,
+            border: `2px solid ${theme.palette.primary.main}`,
             '&:hover': {
               backgroundColor: 'transparent',
               color: theme.palette.primary.main,
-              border: '2px solid ' + theme.palette.primary.main,
+              border: `2px solid ${theme.palette.primary.main}`,
             },
           }}
         >
@@ -61,13 +61,13 @@ const HeroButtons = (): JSX.Element => {
               marginRight: '15px',
               fontSize: '16px',
               textTransform: 'uppercase',
-              border: '2px solid ' + theme.palette.primary.main,
+              border: `2px solid ${theme.palette.primary.main}`,
               whiteSpace: 'nowrap',
               minWidth: 'auto',
               '&:hover': {
                 backgroundColor: theme.palette.primary.main,
                 color: theme.palette.common.black,
-                border: '2px solid ' + theme.palette.primary.main,
+                border: `2px solid ${theme.palette.primary.main}`,
               },
             }}
           >
