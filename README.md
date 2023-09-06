@@ -18,7 +18,8 @@ This is an enterprise website template built using **React 18 (with TypeScript 4
 
 Install the following prerequisites:
 
-1. [Python 3.10.6 or higher](https://www.python.org/downloads/)
+1. [Python 3.8-3.11](https://www.python.org/downloads/)
+<br> This project uses **Django v4.1.5**. For Django to work, you must have a correct Python version installed on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
 2. [Node.js 18.6.0 or higher](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download)
 
