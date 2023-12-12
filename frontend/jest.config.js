@@ -11,6 +11,9 @@ module.exports = {
 
     // Handle CSS imports (without CSS modules)
     '\\.(css|less)$': '<rootDir>/src/tests/mocks/fileMock.css',
+
+    // Handle react-leaflet imports
+    'react-leaflet': '<rootDir>/src/tests/mocks/fileMock.ts',
   },
   transform: {
     '^.+\\.(ts|tsx|js|jsx)$': ['ts-jest', { isolatedModules: true }],
