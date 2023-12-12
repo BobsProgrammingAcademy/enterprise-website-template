@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import Home from '../pages/Home';
@@ -28,7 +28,13 @@ describe('Home page', () => {
         /We offer a range of pricing plans to suit everyone/i
       )
     ).toBeVisible();
-    expect(await screen.findByText(/We help software developers learn new skills, gain more experience and create excellent applications/i)).toBeVisible();
-    expect(await screen.findByText(/We would love to hear from you/i)).toBeVisible();
+    expect(
+      await screen.findByText(
+        /We help software developers learn new skills, gain more experience and create excellent applications/i
+      )
+    ).toBeVisible();
+    expect(
+      await screen.findByText(/We would love to hear from you/i)
+    ).toBeVisible();
   });
 });
