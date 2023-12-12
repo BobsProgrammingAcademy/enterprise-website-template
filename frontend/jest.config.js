@@ -3,6 +3,9 @@ module.exports = {
   moduleDirectories: ['node_modules', './src'],
   preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom',
+  testEnvironmentOptions: {
+    url: 'http://127.0.0.1:8000/',
+  },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
     // Handle image imports

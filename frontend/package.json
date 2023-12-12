@@ -8,8 +8,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage",
+    "clear_jest": "jest --clearCache"
   },
   "eslintConfig": {
     "extends": [
