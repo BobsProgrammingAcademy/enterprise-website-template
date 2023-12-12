@@ -9,6 +9,7 @@ This is an enterprise website template built using **React 18** (with **TypeScri
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the application](#run-the-application)
+- [Running the tests](#run-the-tests)
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
 - [Copyright and License](#copyright-and-license)
@@ -97,6 +98,7 @@ cd frontend
 npm install
 ```
 
+
 ### Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
@@ -121,11 +123,33 @@ npm start
 
 Go to http://localhost:3000/ to view the application.
 
+
+### Run the tests
+
+#### 1. Run the backend tests
+
+From the **backend** directory, run:
+
+```bash
+python manage.py test --pattern="tests.py"
+
+```
+
+#### 2. Run the frontend tests
+
+From the **frontend** directory, run:
+
+```bash
+npm run test
+```
+
+
 ### Add data to the application
 
 Add data through Django Admin.
 
 Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
+
 
 ### Customize the application
 
@@ -168,6 +192,7 @@ To modify the logo in the application, make changes in the ```frontend/src/layou
 #### Changing Buttons in the Hero Section
 
 To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.tsx``` file.
+
 
 ### Copyright and License
 
