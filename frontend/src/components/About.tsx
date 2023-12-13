@@ -20,7 +20,7 @@ const About = (): JSX.Element => {
   const theme = useTheme();
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const setViewPortVisibility = (
-    isVisible: boolean | ((prevState: boolean) => boolean)
+    isVisible: boolean | ((prevState: boolean) => boolean),
   ) => {
     if (viewPortEntered) {
       return;
@@ -111,7 +111,7 @@ const About = (): JSX.Element => {
                             onChange={(
                               isVisible:
                                 | boolean
-                                | ((prevState: boolean) => boolean)
+                                | ((prevState: boolean) => boolean),
                             ) => setViewPortVisibility(isVisible)}
                             delayedCall
                           >

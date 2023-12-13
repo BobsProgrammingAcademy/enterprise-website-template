@@ -15,26 +15,26 @@ describe('Home page', () => {
 
     expect(
       await screen.findByText(
-        /We offer a range of products to support your business/i
-      )
+        /We offer a range of products to support your business/i,
+      ),
     ).toBeInTheDocument();
     expect(
       await screen.findByText(
-        /We offer a range of services to support your business/i
-      )
+        /We offer a range of services to support your business/i,
+      ),
     ).toBeVisible();
     expect(
       await screen.findByText(
-        /We offer a range of pricing plans to suit everyone/i
-      )
+        /We offer a range of pricing plans to suit everyone/i,
+      ),
     ).toBeVisible();
     expect(
       await screen.findByText(
-        /We help software developers learn new skills, gain more experience and create excellent applications/i
-      )
+        /We help software developers learn new skills, gain more experience and create excellent applications/i,
+      ),
     ).toBeVisible();
     expect(
-      await screen.findByText(/We would love to hear from you/i)
+      await screen.findByText(/We would love to hear from you/i),
     ).toBeVisible();
   });
 });
