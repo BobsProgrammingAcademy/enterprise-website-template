@@ -11,7 +11,10 @@
     "eject": "react-scripts eject",
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage",
-    "clear_jest": "jest --clearCache"
+    "clear_jest": "jest --clearCache",
+    "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
+    "format:check": "npm run prettier -- --check",
+    "format:fix": "npm run prettier -- --write"
   },
   "eslintConfig": {
     "extends": [
