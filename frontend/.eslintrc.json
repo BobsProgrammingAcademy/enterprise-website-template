@@ -5,10 +5,13 @@
   },
   "root": true,
   "extends": ["react-app", "react-app/jest", "prettier"],
+  "globals": {
+    "__dirname": true
+  },
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["./tsconfig.json"]
+    "project": "*/tsconfig.json"
   },
   "parser": "@typescript-eslint/parser",
   "plugins": ["react", "@typescript-eslint"],
