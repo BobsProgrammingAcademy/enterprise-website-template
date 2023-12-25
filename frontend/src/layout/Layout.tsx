@@ -12,11 +12,11 @@ import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 
-interface Props {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: Props): JSX.Element => {
+const Layout = ({ children }: LayoutProps): JSX.Element => {
   const theme = useTheme();
   const isLg = useMediaQuery(theme.breakpoints.up('lg'), {
     defaultMatches: true,

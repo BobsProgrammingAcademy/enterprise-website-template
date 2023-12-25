@@ -11,11 +11,11 @@ import { alpha, useTheme } from '@mui/material/styles';
 
 import CustomButton from '../components/CustomButton';
 
-interface Props {
+interface HeaderProps {
   onSidebarOpen: () => void;
 }
 
-const Header = ({ onSidebarOpen }: Props): JSX.Element => {
+const Header = ({ onSidebarOpen }: HeaderProps): JSX.Element => {
   const theme = useTheme();
 
   return (

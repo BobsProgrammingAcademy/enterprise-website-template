@@ -3,12 +3,12 @@ import { useTheme } from '@mui/material/styles';
 import { MapContainer, Circle, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-interface Props {
+interface MapProps {
   coordinates: [number, number];
   zoom: number;
 }
 
-const Map = ({ coordinates, zoom }: Props): JSX.Element => {
+const Map = ({ coordinates, zoom }: MapProps): JSX.Element => {
   const theme = useTheme();
   const position: LatLngExpression = coordinates;
   const fillBlueOptions = { fillColor: theme.palette.primary.main };

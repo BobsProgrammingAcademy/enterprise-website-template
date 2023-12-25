@@ -8,12 +8,12 @@ import { useTheme } from '@mui/material/styles';
 
 import CustomButton from '../components/CustomButton';
 
-interface Props {
+interface SidebarProps {
   onClose: () => void;
   open: boolean;
 }
 
-const Sidebar = ({ open, onClose }: Props): JSX.Element => {
+const Sidebar = ({ open, onClose }: SidebarProps): JSX.Element => {
   const theme = useTheme();
 
   return (
