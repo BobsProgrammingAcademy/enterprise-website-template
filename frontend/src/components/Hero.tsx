@@ -39,8 +39,8 @@ const Hero = (): JSX.Element => {
     <div id='home'>
       <Box
         sx={{
-          py: 10,
-          px: 2,
+          paddingY: 10,
+          paddingX: 2,
           backgroundColor: theme.palette.background.paper,
         }}
       >
@@ -59,8 +59,8 @@ const Hero = (): JSX.Element => {
                 align='center'
                 color={theme.palette.text.primary}
                 variant='h3'
-                sx={{ fontWeight: 700 }}
                 gutterBottom
+                sx={{ fontWeight: 700 }}
               >
                 {item.title}
               </Typography>
