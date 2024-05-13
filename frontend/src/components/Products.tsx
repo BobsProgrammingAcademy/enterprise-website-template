@@ -122,7 +122,7 @@ const Products = (): JSX.Element => {
                           filter: 'brightness(0.7)',
                           marginTop: 4,
                         }}
-                      ></CardMedia>
+                      />
                     </Card>
                   </Box>
                 </Box>
