@@ -5,9 +5,11 @@ import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
+
+// Material Icons
 import StormIcon from '@mui/icons-material/Storm';
 import MenuIcon from '@mui/icons-material/Menu';
-import { alpha, useTheme } from '@mui/material/styles';
 
 import CustomButton from '../components/CustomButton';
 
