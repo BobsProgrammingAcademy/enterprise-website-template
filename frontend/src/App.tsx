@@ -3,6 +3,7 @@ import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
+// Components
 import getTheme from './theme/theme';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
